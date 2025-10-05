@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+n  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Giới thiệu về Nhà Thông Minh</title>
+<style>
+    :root { --max-width:1100px; --accent:#0b74de; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      color: #0b2540;
+    }
+    /* Background tĩnh của phần header/hero */
+    .hero {
+      min-height: 44vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80'); /* ảnh background */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      position: relative;
+    }
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(6,18,31,0.6);
+    }
+    .hero .content {
+      position: relative;
+      z-index: 2;
+      padding: 2rem;
+      max-width: 900px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin: 0 0 .5rem;
+    }
+    p.lead {
+      margin: 0;
+      font-size: 1.05rem;
+      opacity: 0.95;
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 1.25rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 6px 18px rgba(11,37,64,0.06);
+      overflow: hidden;
+    }
+    .card h2 {
+      margin-top: 0;
+    }
+    .feature {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+    .feature img {
+      width: 110px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+    ul {
+      padding-left: 1.1rem;
+    }
+    footer {
+      max-width: var(--max-width);
+      margin: 2rem auto 3rem;
+      padding: 0 1rem;
+      color: #4b5964;
+      font-size: .95rem;
+    }
+    /* Responsive */
+    @media (max-width: 880px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+      .feature img {
+        width: 90px;
+        height: 70px;
+      }
+    }
+    .btn {
+      display: inline-block;
+      padding: .55rem .9rem;
+      border-radius: 10px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+<header class="hero" role="banner">
+<div aria-hidden="true" class="overlay"></div>
+<div class="content">
+<h1>Nhà Thông Minh — Tiện lợi, An toàn và Tiết kiệm</h1>
+<p class="lead">Tìm hiểu khái niệm, lợi ích và một số ứng dụng phổ biến của hệ thống nhà thông minh (Smart Home).</p>
+<p style="margin-top:1rem"><a class="btn" href="#more">Tìm hiểu thêm</a></p>
+</div>
+</header>
+<main id="more">
+<section class="grid">
+<article class="card">
+<h2>Nhà thông minh là gì?</h2>
+<p>Nhà thông minh sử dụng mạng lưới thiết bị kết nối (IoT) để tự động hóa và điều khiển các chức năng gia đình: chiếu sáng, điều hòa, an ninh, cửa, và nhiều hơn nữa. Người dùng có thể điều khiển qua điện thoại, giọng nói hoặc kịch bản tự động.</p>
+</article>
+<article class="card">
+<h2>Lợi ích chính</h2>
+<ul>
+<li>Tiện lợi — điều khiển từ xa và tự động hóa các tác vụ hằng ngày.</li>
+<li>An toàn — camera, cảm biến cửa/khói, cảnh báo tức thì.</li>
+<li>Tiết kiệm năng lượng — quản lý chiếu sáng và điều hòa theo nhu cầu.</li>
+<li>Tùy biến — kịch bản phù hợp với lối sống từng gia đình.</li>
+</ul>
+</article>
+</section>
+<section class="grid" style="margin-top:1.25rem">
+<div class="card">
+<h2>Ví dụ thiết bị</h2>
+<div class="feature">
+<img alt="Thiết bị thông minh" src="https://file.hstatic.net/1000177816/file/tien-ich-cua-nha-thong-minh_master.jpg"/>
+<div>
+<strong>Thiết bị IoT</strong>
+<p>Thiết bị kết nối để thu thập dữ liệu, điều khiển từ xa.</p>
+</div>
+</div>
+<hr style="margin:1rem 0"/>
+<div class="feature">
+<img alt="Chiếu sáng thông minh" src="https://www.thietbismarthome.com.vn/images/companies/1/Tin-tuc/2021-Sep-23/thietbismarthome-bong-den-thong-minh-smart-light-la-gi-1.jpg?1632391274865"/>
+<div>
+<strong>Chiếu sáng thông minh</strong>
+<p>Điều chỉnh độ sáng, lên lịch bật tắt theo nhu cầu.</p>
+</div>
+</div>
+</div>
+<div class="card">
+<h2>Ứng dụng phổ biến</h2>
+<ul>
+<li>Tự động bật đèn khi có người, tắt khi vắng nhà.</li>
+<li>Hẹn giờ vận hành máy lọc không khí, robot hút bụi.</li>
+<li>Giám sát và cảnh báo khi phát hiện khói hoặc rò rỉ nước.</li>
+<li>Kịch bản "Ra khỏi nhà" hoặc "Về nhà" để tối ưu năng lượng và an ninh.</li>
+</ul>
+</div>
+</section>
+<section class="card" style="margin-top:1.25rem">
+<h2>Các thiết bị phổ biến trong nhà thông minh</h2>
+<p>Nhà thông minh (Smart Home) bao gồm nhiều thiết bị được kết nối mạng giúp bạn dễ dàng điều khiển và tự động hóa cuộc sống hàng ngày. Một số thiết bị phổ biến gồm:</p>
+<ul>
+<li><strong>Đèn thông minh:</strong> Điều khiển bật/tắt, đổi màu, điều chỉnh độ sáng từ xa.</li>
+<li><strong>Ổ cắm thông minh:</strong> Bật/tắt nguồn điện cho các thiết bị điện tử từ điện thoại.</li>
+<li><strong>Camera giám sát:</strong> Theo dõi và bảo vệ an ninh gia đình.</li>
+<li><strong>Khóa cửa thông minh:</strong> Mở khóa không cần chìa, sử dụng mã số hoặc ứng dụng.</li>
+<li><strong>Cảm biến chuyển động / cửa sổ:</strong> Phát hiện chuyển động hoặc cửa mở, kết nối với hệ thống báo động.</li>
+<li><strong>Điều hòa thông minh:</strong> Điều chỉnh nhiệt độ và chế độ vận hành từ xa.</li>
+</ul>
+</section>
+<section class="card" style="margin-top:1.25rem">
+<h2>Cách kết nối điện thoại với các thiết bị nhà thông minh</h2>
+<ol>
+<li><strong>Bước 1:</strong> Tải ứng dụng điều khiển từ CH Play hoặc App Store (ví dụ: Hue App, Mi Home, Smart Life,...).</li>
+<li><strong>Bước 2:</strong> Đăng ký hoặc đăng nhập tài khoản trong ứng dụng.</li>
+<li><strong>Bước 3:</strong> Đưa thiết bị về chế độ “kết nối” bằng cách giữ nút nguồn 5–10 giây hoặc nhấn nút reset.</li>
+<li><strong>Bước 4:</strong> Kết nối Wi-Fi (lưu ý: nhiều thiết bị chỉ hỗ trợ Wi-Fi 2.4GHz).</li>
+<li><strong>Bước 5:</strong> Đặt tên cho thiết bị, ví dụ “Đèn phòng khách” hoặc “Camera cổng”.</li>
+<li><strong>Bước 6:</strong> Sau khi kết nối thành công, bạn có thể bật/tắt, đổi màu đèn, cài hẹn giờ và chia sẻ quyền điều khiển với người khác.</li>
+</ol>
+</section>
+<section class="card" style="margin-top:1.25rem">
+<h2>Một số cách kết nối khác</h2>
+<ul>
+<li><strong>Bluetooth:</strong> Kết nối trực tiếp với điện thoại, phù hợp cho loa hoặc cảm biến gần.</li>
+<li><strong>Zigbee / Z-Wave:</strong> Giao thức không dây chuyên dụng, cần trung tâm điều khiển (hub) như Amazon Echo, Xiaomi Gateway,...</li>
+<li><strong>Điều khiển bằng trợ lý ảo:</strong> Tích hợp với Google Assistant, Alexa hoặc Siri để ra lệnh bằng giọng nói, ví dụ: “Hey Google, bật đèn phòng khách.”</li>
+</ul>
+</section>
+
+<section class="card" style="margin-top:1.25rem">
+<h2>Hình ảnh minh họa</h2>
+<p style="margin-top:0">Một vài hình ảnh minh hoạ:</p>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.6rem;margin-top:0.8rem">
+<img alt="Minh họa IoT" src="https://cdn2.fptshop.com.vn/unsafe/Uploads/images/tin-tuc/180066/Originals/thiet-bi-thong-minh-1_1.jpg" style="width:100%;height:160px;object-fit:cover;border-radius:8px"/>
+<img alt="Giao diện điều khiển" src="https://file.hstatic.net/200000264521/file/robot_hut_bui_thong_minh_5261e82e7eba49f583be80b09509fbd1.jpg" style="width:100%;height:160px;object-fit:cover;border-radius:8px"/>
+<img alt="Camera an ninh" src="https://cdn.24h.com.vn/upload/2-2018/images/2018-05-25/Nhung-thiet-bi-thong-minh-nay-nhat-dinh-phai-co-trong-cac-can-ho-nhung-thiet-bi-thong-minh-nhat-dinh-phai-co--1--1527231303-132-width660height440.jpg" style="width:100%;height:160px;object-fit:cover;border-radius:8px"/>
+</div>
+</section>
+<section class="card" style="margin-top:1.25rem">
+<h2>Tài nguyên &amp; bước bắt đầu</h2>
+<ol>
+<li>Xác định nhu cầu: an ninh, tiện nghi, tiết kiệm hay giải trí.</li>
+<li>Chọn nền tảng trung tâm (hub) hoặc hệ sinh thái (ví dụ: Google Home, Amazon Alexa, Apple HomeKit).</li>
+<li>Bắt đầu nhỏ: 1–2 thiết bị, sau đó mở rộng dần và viết kịch bản tự động.</li>
+<li>Đảm bảo an ninh mạng: đổi mật khẩu, cập nhật firmware và dùng kết nối bảo mật.</li>
+</ol>
+</section>
+</main>
+<footer>
+<div style="max-width:var(--max-width);margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap">
+<div>© 2025 — Trang mẫu giới thiệu Nhà Thông Minh</div>
+<div style="opacity:.85">Người tạo: ChatGPT</div>
+</div>
+</footer>
+</body>
+</html>
